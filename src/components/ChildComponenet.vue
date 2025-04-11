@@ -1,18 +1,19 @@
 <template>
     <h1>This is child ChildComponent</h1>
-    <div class="bg-red-500 text-white">
-    Tailwind is working!
-  </div>
-    <table>
+   
+    <table class=" table-auto w-full">
+        <tr><th>first_name</th><th>last_name</th><th>phone</th></tr>
         <tr v-for ="item in userdetail" :key="item.id" >
             <td>{{ item.first_name }}</td>
             <td>{{ item.last_name }}</td>
             <td>{{ item.phone }}</td>
-            <td>{{ item.updated_at }}</td>
         </tr>
     </table>
 
-    <button v-on:click="callapi()">Api call</button>
+    <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" v-on:click="callapi()">
+  Api call
+</button>
+
 </template>
 
 <script>
@@ -45,8 +46,4 @@ export default {
 
 <style>
 
-table{
-    width:100%;
-
-}
 </style>
