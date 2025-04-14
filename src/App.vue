@@ -7,6 +7,8 @@
   <StyleComponenet />
   <ConditionalComponents />
   <ListComponenets />
+  <EventComponenet />
+  <FormComponenet />
 </template>
 
 <script>
@@ -18,6 +20,9 @@ import CompositeApiComponets from './components/CompositeApiComponets.vue';
 import StyleComponenet from './components/StyleComponenet.vue';
 import ConditionalComponents from './components/ConditionalComponents.vue';
 import ListComponenets from './components/ListComponenets.vue';
+
+import EventComponenet from './components/EventComponenet.vue';
+import FormComponenet from './components/FormComponenet.vue';
 
 
 
@@ -32,6 +37,8 @@ export default {
     StyleComponenet,
     ConditionalComponents,
     ListComponenets,
+    EventComponenet,
+    FormComponenet,
   }
 }
 </script>
