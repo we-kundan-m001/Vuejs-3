@@ -29,8 +29,10 @@ const props = defineProps({
 //   age: Number
 //    age: [Number,String]
     age:{
-        type:Number,
-        required:true
+        type:[Number,String],
+        required:true,
+        default:'26',
+        
         
     }
 })
