@@ -43,9 +43,16 @@
 
 <router-link to="/" >Header</router-link><br><br>
 
-<router-link to="/contact" >contact</router-link>
+<router-link :to="{ name: 'contatpage' }" >contact</router-link>
 
 <router-view />
+
+
+<button class="bg-blue-500 border rounded text-white" @click="$router.go(1)">Forward</button>|<button class="bg-blue-500 border rounded text-white" @click="$router.go(-1)">Backward</button>
+|<button class="bg-blue-500 border rounded text-white" @click="$router.push('/userdetails/1')">userdetails</button><br><br>
+
+<router-link to="/userdetail/123">userdetails</router-link>
+
 
 
 
